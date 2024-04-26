@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="java 1.css">
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Ingrese un número:"));
+
+        if (numero >= 0 && numero <= 9) {
+            document.write("<p>")
+            document.write("El número ingresado tiene 1 cifra.");
+            document.write("</p>")
+        } else if (numero >= 10 && numero <= 99) {
+            document.write("<p>")
+            document.write("El número ingresado tiene 2 cifras.");
+            document.write("</p>")
+        } else if (numero >= 100 && numero <= 999) {
+            document.write("<p>")
+            document.write("El número ingresado tiene 3 cifras.");
+            document.write("</p>")
+        } else {
+            document.write("<p>")
+            document.write("El número ingresado no es válido o tiene más de tres cifras.");
+            document.write("</p>")
+        }
+                
+    </script>
+</body>
+</html>

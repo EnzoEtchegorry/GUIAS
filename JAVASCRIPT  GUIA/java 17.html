@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="java 1.css">
+</head>
+<body>
+    <script>
+        let nombre = prompt("Ingrese el nombre del postulante:");
+        let totalPreguntas = parseInt(prompt("Ingrese la cantidad total de preguntas:"));
+        let preguntasCorrectas = parseInt(prompt("Ingrese la cantidad de preguntas contestadas correctamente:"));
+
+
+        let porcentajeCorrectas = (preguntasCorrectas / totalPreguntas) * 100;
+
+        let nivel;
+        if (porcentajeCorrectas >= 90) {
+            nivel = "Nivel superior";
+        } else if (porcentajeCorrectas >= 75) {
+            nivel = "Nivel medio";
+        } else if (porcentajeCorrectas >= 50) {
+            nivel = "Nivel regular";
+        } else {
+            nivel = "Fuera de nivel";
+        }
+        document.write("<p>");
+        mensaje = "El postulante " + nombre + " ha obtenido un porcentaje de respuestas correctas del " + porcentajeCorrectas + "%, lo que corresponde al nivel " + nivel + ".";
+        document.write(mensaje);
+        document.write("</p>");
+    </script>
+</body>
+</html>
