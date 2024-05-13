@@ -10,14 +10,16 @@ package etchegorrylascanomachado;
  */
 public class pproblema1 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        int base=20;
-        int altura=20;
-        int area= base*altura;
-        System.out.println("el area es: " + area);
-    }
-    
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Ingrese la base del rectángulo:");
+        int base = scanner.nextInt();
+        
+        System.out.println("Ingrese la altura del rectángulo:");
+        int altura = scanner.nextInt();
+        
+        int area = base * altura;
+        System.out.println("El área del rectángulo es: " + area);
+    }   
 }
